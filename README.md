@@ -12,8 +12,6 @@ This snapshot accompanies [*An Algorithmic Account of Prime Populations Between 
 | `overlap_bound.py` | Computes a floor-count lower bound with a presieved core. An inconclusive lower bound does not refute the four-prime claim. |
 | `run_interval_overlaps.py` | Reports exact and certified lower counts for a range of consecutive prime roots. |
 | `core_diagnostic.py` | Diagnoses how the overlap certificate depends on the core cutoff; requires NumPy. |
-| `verify.cjs` | Reproduces the middle-semiprime strip checks using archived JSON inputs. |
-| `verify_final_interval.py` | Independently checks the earlier $1.5\times10^{12}$ sweep endpoint. |
 | `rolling_segmented_sieve.py` | Streams exact prime counts at square boundaries while carrying each sieve prime's next multiple from block to block. |
 | `adjoining_interval_transfer.py` | Updates the common sieve at aligned offsets and reports survivor gains, losses, and unmatched tails. |
 | `test_interval_transfer.py` | Regression tests for the rolling and adjoining-transfer scripts. |
@@ -30,8 +28,6 @@ python overlap_bound.py 881 883 --core 7
 ```
 
 In the first command, the **Newly removed** column is the per-prime removal histogram: each composite is counted under the first sieve prime that marks it. The default order is descending; `--ascending` shows least-prime-factor bins. The overlap ledger also counts later hits: it gives 3,527 positions, 7,696 total divisor hits, 4,431 repeated hits, 3,265 composites, and 262 primes. The floor-count command certifies a lower bound of 254 primes without finding their positions.
-
-The optional `node verify.cjs` check (Node.js 18 or later) requires two archived JSON inputs. The legacy verifier imports `../research_cycle_1029/results.json` and `../research_cycle_1031/results.json`. Without those files at the expected paths, the command does not run from the flat checkout alone.
 
 To test a small range:
 
