@@ -24,9 +24,10 @@ This snapshot accompanies [*An Algorithmic Account of Prime Populations Between 
 Run from this directory with Python 3.10+ and Node.js 18+:
 
 ```text
+interval_exact.py 881 883
 interval_exact_overlap.py 881 883 --quiet
 overlap_bound.py 881 883 --core 7
-node research_cycle_1032/verify.cjs
+node verify.cjs
 ```
 
 The first command gives 3,527 positions, 7,696 total divisor hits, 4,431 repeated hits, 3,265 composites, and 262 primes. The second certifies a lower bound of 254 primes.
@@ -34,7 +35,7 @@ The first command gives 3,527 positions, 7,696 total divisor hits, 4,431 repeate
 To test a small range:
 
 ```text
-python interval_accounting/run_consecutive_intervals.py 800 900
+python run_consecutive_intervals.py 800 900
 ```
 
 ## Adjoining-interval scripts
