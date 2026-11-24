@@ -17,6 +17,7 @@ This snapshot accompanies [*An Algorithmic Account of Prime Populations Between 
 | `rolling_segmented_sieve.py` | Streams exact prime counts at square boundaries while carrying each sieve prime's next multiple from block to block. |
 | `adjoining_interval_transfer.py` | Updates the common sieve at aligned offsets and reports survivor gains, losses, and unmatched tails. |
 | `test_interval_transfer.py` | Regression tests for the rolling and adjoining-transfer scripts. |
+| `data/4x10e12_sweep.csv` | The sweep data for intervals up to $4\times10^{12}$. |
 
 ## Quick checks
 
