@@ -4,13 +4,13 @@ This snapshot accompanies *An Algorithmic Account of Prime Populations Between P
 
 | Path | What it does |
 | --- | --- |
-| `interval_accounting/interval_exact.py` | Counts primes in the open interval and records removals by sieve prime. `--ascending` gives the least-prime-factor bins. |
-| `interval_accounting/run_consecutive_intervals.py` | Runs the exact sieve on consecutive prime pairs in a specified range of roots. |
-| `interval_overlap/interval_exact_overlap.py` | Adds all divisor hits and repeat hits to the exact sieve ledger. |
-| `interval_overlap/overlap_bound.py` | Computes a floor-count lower bound with a presieved core. An inconclusive lower bound does not refute the four-prime claim. |
-| `interval_overlap/run_interval_overlaps.py` | Reports exact and certified lower counts for a range of consecutive prime roots. |
-| `interval_overlap/core_diagnostic.py` | Diagnoses how the overlap certificate depends on the core cutoff; requires NumPy. |
-| `research_cycle_1032/verify.cjs` | Reproduces the middle-semiprime strip checks using archived JSON inputs from `research_cycle_1029` and `research_cycle_1031`. |
+| `interval_exact.py` | Counts primes in the open interval and records removals by sieve prime. `--ascending` gives the least-prime-factor bins. |
+| `run_consecutive_intervals.py` | Runs the exact sieve on consecutive prime pairs in a specified range of roots. |
+| `interval_exact_overlap.py` | Adds all divisor hits and repeat hits to the exact sieve ledger. |
+| `overlap_bound.py` | Computes a floor-count lower bound with a presieved core. An inconclusive lower bound does not refute the four-prime claim. |
+| `run_interval_overlaps.py` | Reports exact and certified lower counts for a range of consecutive prime roots. |
+| `core_diagnostic.py` | Diagnoses how the overlap certificate depends on the core cutoff; requires NumPy. |
+| `verify.cjs` | Reproduces the middle-semiprime strip checks using archived JSON inputs from `research_cycle_1029` and `research_cycle_1031`. |
 | `verify_final_interval.py` | Checks the final pair of roots and independently counts primes between their squares. |
 | `rolling_segmented_sieve.py` | Streams exact prime counts at square boundaries while carrying each sieve prime's next multiple from block to block. |
 | `adjoining_interval_transfer.py` | Updates the common sieve at aligned offsets and reports survivor gains, losses, and unmatched tails. |
@@ -21,8 +21,8 @@ This snapshot accompanies *An Algorithmic Account of Prime Populations Between P
 Run from this directory with Python 3.10+ and Node.js 18+:
 
 ```text
-python interval_overlap/interval_exact_overlap.py 881 883 --quiet
-python interval_overlap/overlap_bound.py 881 883 --core 7
+interval_exact_overlap.py 881 883 --quiet
+overlap_bound.py 881 883 --core 7
 node research_cycle_1032/verify.cjs
 ```
 
