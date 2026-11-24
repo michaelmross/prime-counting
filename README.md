@@ -1,6 +1,6 @@
 # Prime Populations Between Prime Squares: Companion Code
 
-This snapshot accompanies *An Algorithmic Account of Prime Populations Between Prime Squares*. It contains the algorithms and selected verification inputs, not the complete log of the computational sweep.
+This snapshot accompanies *An Algorithmic Account of Prime Populations Between Prime Squares* (Ross, M. M., 2026). It contains the algorithms and selected verification inputs, not the complete log of the computational sweep.
 
 | Path | What it does |
 | --- | --- |
