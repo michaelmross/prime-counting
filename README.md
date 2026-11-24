@@ -1,4 +1,4 @@
-# Prime Populations Between Prime Squares: Companion Software
+# Prime Populations Between Prime Squares: Companion Code
 
 This snapshot accompanies *An Algorithmic Account of Prime Populations Between Prime Squares*. It contains the algorithms and selected verification inputs, not the complete log of the computational sweep.
 
@@ -52,3 +52,7 @@ The transfer script accepts three consecutive prime roots or `--range START STOP
 ## Reported sweep endpoint
 
 The study counted primes in the open intervals between consecutive prime squares through the pair $p=1{,}224{,}709$, $q=1{,}224{,}739$. The last interval is $(1{,}499{,}912{,}134{,}681,\;1{,}499{,}985{,}618{,}121)$ and was independently checked to contain 2,618,304 primes. Run `python verify_final_interval.py` to repeat that check. This package does not include the full sweep output or assert that it has been independently rerun. Running the range driver over the full range is a substantial computation.
+
+## Citation and license
+
+Code: MIT. Note and data: CC-BY 4.0.
