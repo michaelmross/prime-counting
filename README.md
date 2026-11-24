@@ -29,7 +29,7 @@ python interval_exact_overlap.py 881 883 --quiet
 python overlap_bound.py 881 883 --core 7
 ```
 
-The overlap ledger gives 3,527 positions, 7,696 total divisor hits, 4,431 repeated hits, 3,265 composites, and 262 primes. The floor-count command certifies a lower bound of 254 primes.
+In the first command, the **Newly removed** column is the per-prime removal histogram: each composite is counted under the first sieve prime that marks it. The default order is descending; `--ascending` shows least-prime-factor bins. The overlap ledger also counts later hits: it gives 3,527 positions, 7,696 total divisor hits, 4,431 repeated hits, 3,265 composites, and 262 primes. The floor-count command certifies a lower bound of 254 primes without finding their positions.
 
 The optional `node verify.cjs` check (Node.js 18 or later) requires two archived JSON inputs. The legacy verifier imports `../research_cycle_1029/results.json` and `../research_cycle_1031/results.json`. Without those files at the expected paths, the command does not run from the flat checkout alone.
 
