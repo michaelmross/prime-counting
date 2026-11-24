@@ -2,7 +2,7 @@
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24488933-blue.svg)](https://doi.org/10.5281/zenodo.24488933)
 
-This snapshot accompanies [*An Algorithmic Account of Prime Populations Between Prime Squares*](https://doi.org/10.5281/zenodo.24488671) (Ross, M. M., 2026). It contains the algorithms, selected verification inputs, and the sweep CSV described below.
+This snapshot accompanies [*An Algorithmic Account of Prime Populations Between Prime Squares*](https://doi.org/10.5281/zenodo.24488671) (Ross, M. M., 2026). It contains the algorithms, selected verification inputs, and dataset.
 
 | Path | What it does |
 | --- | --- |
