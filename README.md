@@ -16,6 +16,7 @@ This snapshot accompanies [*An Algorithmic Account of Prime Populations Between 
 | `adjoining_interval_transfer.py` | Updates the common sieve at aligned offsets and reports survivor gains, losses, and unmatched tails. |
 | `test_interval_transfer.py` | Regression tests for the rolling and adjoining-transfer scripts. |
 | `data/4x10e12_sweep.csv` | Sweep data through upper root $2{,}000{,}029$.|
+| `data/1.6x10e13_sweep.csv` | Sweep data through upper root $4{,}000{,}037$.|
 
 ## Quick checks
 
